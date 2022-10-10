@@ -87,7 +87,7 @@ class Prompt {
                 templateData.name,
                 templateData.id,
                 templateData.email,
-                templateData.officeNumber
+                templateData.office
               );
               this.devTeam.push(newManager);
               this.questions();
@@ -224,7 +224,7 @@ class Prompt {
                 templateData.name,
                 templateData.id,
                 templateData.email,
-                templateData.school
+                templateData.education
               );
               this.teamArray.push(newIntern);
               // Sends user back to menu
