@@ -245,7 +245,6 @@ class Prompt {
   }
 }
 
-// Activates prompts in CLI
 const prompt = new Prompt();
 prompt.questions();
 
