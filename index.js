@@ -1,9 +1,9 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
-const generateHTML = require("./src/generateHtmlPage");
-const Manager = require("./lib/Manager");
-const Intern = require("./lib/Intern");
-const Engineer = require("./lib/Engineer");
+const generateHTML = require("index.html");
+const Manager = require("./lib/manager");
+const Intern = require("./lib/intern");
+const Engineer = require("./lib/engineer");
 
 class Prompt {
   constructor() {
