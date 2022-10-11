@@ -17,7 +17,7 @@ Once the user has followed the installation guide, they will be prompted with a 
 
 
 
-https://drive.google.com/file/d/1N4f3OzTqmCdWdELhOEMdrDblK9Yp0Byj/view?usp=sharing
+[![Watch the video] https://drive.google.com/file/d/1N4f3OzTqmCdWdELhOEMdrDblK9Yp0Byj/view?usp=sharing
 
 #### Tech
 
