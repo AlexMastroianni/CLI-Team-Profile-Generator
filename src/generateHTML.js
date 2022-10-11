@@ -1,38 +1,10 @@
-const manager = require("../lib/manager");
-const intern = require("../lib/intern");
-const engineer = require("../lib/engineer");
-const Prompt = require("index.js");
-const managerEl = document.getElementById("mangement");
-const engineerEl = document.getElementById("engineer");
-const internEl = document.getElementById("intern");
-
-//filters
-const generateHTML = (devTeam) => {
-  let devArray = [];
-  const managerTitle = devArray.filter((team) => {
-    return team.getRole() === "Manager";
-  });
-  const engineerTitle = devArray.filter((team) => {
-    return team.getRole() === "Engineer";
-  });
-  const internTitle = devArray.filter((team) => {
-    return team.getRole() === "Intern";
-  });
-  if (managerTitle) {
-    devArray.push(generateManger(managerTitle));
-  }
-  if (engineerTitle) {
-    devArray.push(generateEng(engineerTitle));
-  }
-  if (internTitle) {
-    devArray.push(generateIntern(internTitle));
-  }
-  return devArray.join("");
-};
-//HTML
-
-// var renderListing = function (listing) {
-//   var listingEl = $("<div>").addClass("tile is-parent").html(
+const questions = require("/Users/alexmastroianni/Desktop/Coding Bootcamp/Challenges/Week 10/index.js");
+const Manager = require("../lib/manager");
+const Intern = require("../lib/intern");
+const Engineer = require("../lib/engineer");
+// let managerEl = document.querySelector("#mangement");
+// let engineerEl = document.querySelector("#engineer");
+// let internEl = document.getElementById("#intern");
 
 let generateManger = (managerTitle) => {
   return managerTitle.map((manager) => {
@@ -86,4 +58,28 @@ let generateIntern = (internTitle) => {
       </ul>
     </article>`);
   });
+};
+
+//filters
+const generateHTML = (devTeam) => {
+  let devArray = [];
+  const managerTitle = devArray.filter((team) => {
+    return team.getRole() === "Manager";
+  });
+  const engineerTitle = devArray.filter((team) => {
+    return team.getRole() === "Engineer";
+  });
+  const internTitle = devArray.filter((team) => {
+    return team.getRole() === "Intern";
+  });
+  if (managerTitle) {
+    devArray.push(generateManger(managerTitle));
+  }
+  if (engineerTitle) {
+    devArray.push(generateEng(engineerTitle));
+  }
+  if (internTitle) {
+    devArray.push(generateIntern(internTitle));
+  }
+  return devArray.join("");
 };

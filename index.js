@@ -1,6 +1,6 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
-const renderHTML = require("./src/generateHTML.js");
+const renderHTML = require("./src/generateHTML");
 const Manager = require("./lib/manager");
 const Intern = require("./lib/intern");
 const Engineer = require("./lib/engineer");
@@ -231,14 +231,10 @@ class Prompt {
               this.questions();
             });
         } else if (employeeType === "Confirm Dev Team") {
-          //function that writes the html file in the dist folder
-          const htmlPage = renderHTML(this.getdevTeam());
-          fs.writeFile("./dist/index.html", htmlPage, (err) => {
+          fs.writeFile("./dist/index.html", (err) => {
             if (err) throw new Error(err);
 
-            console.log(
-              "Page created! Check out index.html in the dist/ folder to see it!"
-            );
+            console.log("Page created! ");
           });
         }
       });
