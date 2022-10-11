@@ -1,5 +1,4 @@
 const Intern = require("../lib/Intern");
-
 describe("Intern", () => {
   describe("Object", () => {
     test("creates an Intern object", () => {
