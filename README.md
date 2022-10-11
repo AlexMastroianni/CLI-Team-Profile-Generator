@@ -18,13 +18,12 @@ Once the user has followed the installation guide, they will be prompted with a 
 
 #### Tech
 
--HTML
--CSS
--JavaScript
--Nodejs
--Inquirerjs
--OOP
--TDD (jest tests)
+HTML,
+CSS,
+JavaScript, Nodejs, 
+Inquirerjs,
+OOP,
+TDD (jest tests)
 
 ## Acceptance Criteria
 
@@ -55,19 +54,19 @@ THEN I exit the application, and the HTML is generated
 
 ###Installation
 
-Here are some tips for running the project 
 
 Install node.js
 
-Then, make sure that your repo includes a package.json with the required dependencies. You can create one by running npm init in your command line.
+make sure that your repo includes a package.json. You can do one by running npm init in your CLI.
 
-Run npm i or npm install in order to download all the dependencies. Make sure to also download Inquirer.js by entering npm install inquirer in your terminal in the root directory of the project. Learn more about this package on npm documentation.
+Run npm i or npm install in order to download all the dependencies. 
 
 Run node index.js or node index in your terminal to launch the application, the first question will appear in your terminal.
 
-To make sure the Jest tests work, run npm run test and inspect what the CLI returns.
+Fill out and enjoy!
 
-Enjoy and don't hesitate to contribute! 🙂
+Any questions feel free to get in touch - alex.m.mastroianni@gmail.com
+
 
 
 ## links
