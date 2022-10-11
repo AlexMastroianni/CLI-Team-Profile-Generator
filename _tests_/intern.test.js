@@ -8,20 +8,20 @@ describe("Intern", () => {
     });
   });
 
-  describe("Role", () => {
-    test("gets role of employee", () => {
-      const intern = new Intern("Jonny D", 111, "JohnDoe@fake.com", "USYD");
-
-      expect(intern.getRole()).toEqual("Intern");
-    });
-  });
-
   describe("Education", () => {
     test("gets employee Education", () => {
       const intern = new Intern("Jonny D", 123, "JohnDoe@fake.com", "USDY");
 
       expect(intern.getEducation()).toEqual;
       expect.stringContaining(intern.getEducation.toString());
+    });
+  });
+
+  describe("Role", () => {
+    test("gets role of employee", () => {
+      const intern = new Intern("Jonny D", 111, "JohnDoe@fake.com", "USYD");
+
+      expect(intern.getRole()).toEqual("Intern");
     });
   });
 });
