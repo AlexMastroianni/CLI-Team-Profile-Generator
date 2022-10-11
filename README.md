@@ -18,13 +18,13 @@ Once the user has followed the installation guide, they will be prompted with a 
 
 #### Tech
 
-HTML
-CSS
-JavaScript
-Nodejs
-Inquirerjs
-OOP
-TDD (jest tests)
+-HTML
+-CSS
+-JavaScript
+-Nodejs
+-Inquirerjs
+-OOP
+-TDD (jest tests)
 
 ## Acceptance Criteria
 
