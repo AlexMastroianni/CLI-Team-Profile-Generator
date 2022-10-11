@@ -16,6 +16,10 @@ This project is a CLI team profile generator.
 Once the user has followed the installation guide, they will be prompted with a few question eg role, name, email ect. Once the user has confirmed the infomation a html page is rendered displaying the infomation in a clean way.
 
 
+
+https://user-images.githubusercontent.com/107826386/195041742-338135bc-99de-4291-bf92-fd0d0127fd85.mov
+
+
 #### Tech
 
 HTML,
