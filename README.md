@@ -73,5 +73,6 @@ Any questions feel free to get in touch - alex.m.mastroianni@gmail.com
 ## links
 
 https://github.com/AlexMastroianni/week-10-challenge
-Video Link
-https://drive.google.com/file/d/1N4f3OzTqmCdWdELhOEMdrDblK9Yp0Byj/view?usp=sharing
+
+Video Demo
+https://drive.google.com/file/d/12bP5DHsH6D6G2jorkA2WhOFiyksDOlX8/view?usp=sharing
