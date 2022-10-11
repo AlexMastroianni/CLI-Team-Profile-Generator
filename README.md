@@ -18,7 +18,13 @@ Once the user has followed the installation guide, they will be prompted with a 
 
 #### Tech
 
-Nodejs, OOP and TDD (Jest). 
+HTML
+CSS
+JavaScript
+Nodejs
+Inquirerjs
+OOP
+TDD (jest tests)
 
 ## Acceptance Criteria
 
@@ -41,6 +47,11 @@ THEN I am prompted to enter the intern’s name, ID, email, and school, and I am
 WHEN I decide to finish building my team
 THEN I exit the application, and the HTML is generated
 ```
+
+### Testing
+
+<img width="1427" alt="NPM Test" src="https://user-images.githubusercontent.com/107826386/195032049-fea299c3-f537-4261-830e-5f17fa133d06.png">
+
 
 ###Installation
 
