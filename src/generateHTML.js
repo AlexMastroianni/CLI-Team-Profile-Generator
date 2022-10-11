@@ -1,13 +1,13 @@
 const manager = require("../lib/manager");
 const intern = require("../lib/intern");
-const engineer = require("../lib/mngineer");
+const engineer = require("../lib/engineer");
 const Prompt = require("index.js");
 const managerEl = document.getElementById("mangement");
 const engineerEl = document.getElementById("engineer");
 const internEl = document.getElementById("intern");
 
 //filters
-const generateHTML = (devArray) => {
+const generateHTML = (devTeam) => {
   let devArray = [];
   const managerTitle = devArray.filter((team) => {
     return team.getRole() === "Manager";

@@ -1,6 +1,6 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
-const generateHTML = require("index.html");
+const renderHTML = require("./src/generateHTML.js");
 const Manager = require("./lib/manager");
 const Intern = require("./lib/intern");
 const Engineer = require("./lib/engineer");
@@ -21,7 +21,7 @@ class Prompt {
         type: "list",
         name: "employeeType",
         message: "Which type of employee would you like to add to the team?",
-        choices: ["Manager", "Engineer", "Intern", "Confirm"],
+        choices: ["Manager", "Engineer", "Intern", "Confirm Dev Team"],
       })
       .then(({ employeeType }) => {
         if (employeeType === "Manager") {
@@ -226,14 +226,14 @@ class Prompt {
                 templateData.email,
                 templateData.education
               );
-              this.teamArray.push(newIntern);
+              this.devTeam.push(newIntern);
               // Sends user back to menu
               this.questions();
             });
-        } else if (employeeType === "Dev Team is filled out") {
+        } else if (employeeType === "Confirm Dev Team") {
           //function that writes the html file in the dist folder
-          const pagehtml = generateHTML(this.getTeamArray());
-          fs.writeFile("./dist/index.html", pagehtml, (err) => {
+          const htmlPage = renderHTML(this.getdevTeam());
+          fs.writeFile("./dist/index.html", htmlPage, (err) => {
             if (err) throw new Error(err);
 
             console.log(

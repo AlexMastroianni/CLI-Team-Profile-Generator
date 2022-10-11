@@ -1,5 +1,4 @@
-// Using Intern constructor
-const intern = require("../lib/Intern");
+const Intern = require("../lib/Intern");
 
 describe("Intern", () => {
   describe("Object", () => {
@@ -18,18 +17,12 @@ describe("Intern", () => {
     });
   });
 
-  describe("School", () => {
-    test("gets employee school", () => {
-      const intern = new Intern(
-        "Janey T.",
-        123,
-        "janeytiglao@gmail.com",
-        "UCI"
-      );
+  describe("Education", () => {
+    test("gets employee Education", () => {
+      const intern = new Intern("Jonny D", 123, "JohnDoe@fake.com", "USDY");
 
-      expect(intern.getSchool()).toEqual(
-        expect.stringContaining(intern.school.toString())
-      );
+      expect(intern.getEducation()).toEqual;
+      expect.stringContaining(intern.getEducation.toString());
     });
   });
 });
