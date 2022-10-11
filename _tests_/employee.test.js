@@ -1,7 +1,5 @@
-// Using Employee constructor
 const Employee = require("../lib/Employee");
 
-// Creating Employee object
 describe("Employee", () => {
   describe("Object", () => {
     test("creates an employee object", () => {
@@ -13,7 +11,6 @@ describe("Employee", () => {
     });
   });
 
-  // Gets name from getName
   describe("Name", () => {
     test("gets employee name", () => {
       const employee = new Employee(
@@ -56,7 +53,6 @@ describe("Employee", () => {
     });
   });
 
-  // Gets role from getRole
   describe("Role", () => {
     test("gets role of employee", () => {
       const employee = new Employee(
