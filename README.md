@@ -17,8 +17,7 @@ Once the user has followed the installation guide, they will be prompted with a 
 
 
 
-https://user-images.githubusercontent.com/107826386/195041742-338135bc-99de-4291-bf92-fd0d0127fd85.mov
-
+https://drive.google.com/file/d/1N4f3OzTqmCdWdELhOEMdrDblK9Yp0Byj/view?usp=sharing
 
 #### Tech
 
