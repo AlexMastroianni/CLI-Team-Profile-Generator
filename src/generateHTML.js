@@ -2,9 +2,9 @@ const questions = require("/Users/alexmastroianni/Desktop/Coding Bootcamp/Challe
 const Manager = require("../lib/manager");
 const Intern = require("../lib/intern");
 const Engineer = require("../lib/engineer");
-let managerEl = document.querySelector("#mangement");
-let engineerEl = document.querySelector("#engineer");
-let internEl = document.getElementById("#intern");
+// let managerEl = document.querySelector("#mangement");
+// let engineerEl = document.querySelector("#engineer");
+// let internEl = document.getElementById("#intern");
 
 let generateManger = (managerTitle) => {
   return managerTitle.map((manager) => {
