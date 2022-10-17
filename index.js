@@ -10,7 +10,7 @@ class Prompt {
     this.devTeam = [];
   }
 
-  getdevTeam() {
+  getDevTeam() {
     return this.devTeam;
   }
 
@@ -82,12 +82,12 @@ class Prompt {
             ])
 
             // Pushes Manager data into devTeam
-            .then((templateData) => {
+            .then((devData) => {
               const newManager = new Manager(
-                templateData.name,
-                templateData.id,
-                templateData.email,
-                templateData.office
+                devData.name,
+                devData.id,
+                devData.email,
+                devData.office
               );
               this.devTeam.push(newManager);
               this.questions();
@@ -147,18 +147,15 @@ class Prompt {
                   }
                 },
               },
-
-              // Pushes Engineer data into devTeam
             ])
-            .then((templateData) => {
+            .then((devData) => {
               const newEngineer = new Engineer(
-                templateData.name,
-                templateData.id,
-                templateData.email,
-                templateData.github
+                devData.name,
+                devData.id,
+                devData.email,
+                devData.github
               );
               this.devTeam.push(newEngineer);
-              // Sends user back to menu
               this.questions();
             });
         } else if (employeeType === "Intern") {
@@ -216,25 +213,25 @@ class Prompt {
                   }
                 },
               },
-
-              // Pushes Intern data into devTeam
             ])
-            .then((templateData) => {
+            .then((devData) => {
               const newIntern = new Intern(
-                templateData.name,
-                templateData.id,
-                templateData.email,
-                templateData.education
+                devData.name,
+                devData.id,
+                devData.email,
+                devData.school
               );
               this.devTeam.push(newIntern);
-              // Sends user back to menu
               this.questions();
             });
         } else if (employeeType === "Confirm Dev Team") {
-          fs.writeFile("./dist/index.html", (err) => {
+          const pagehtml = renderHTML(this.getDevTeam());
+          fs.writeFile("./dist/index.html", pagehtml, (err) => {
             if (err) throw new Error(err);
 
-            console.log("Page created! ");
+            console.log(
+              "Check out the new team profile in the ./dist folder! good looking team"
+            );
           });
         }
       });
