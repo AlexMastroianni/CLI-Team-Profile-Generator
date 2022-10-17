@@ -4,7 +4,7 @@ describe("Intern", () => {
     test("creates an Intern object", () => {
       const intern = new Intern("Jonny D", 111, "JohnDoe@fake.com", "USYD");
 
-      expect(intern.school).toEqual(expect.any(String));
+      expect(intern.education).toEqual(expect.any(String));
     });
   });
 
