@@ -204,8 +204,8 @@ class Prompt {
                 type: "input",
                 name: "education",
                 message: "Please add employees education",
-                validate: (schoolInput) => {
-                  if (schoolInput) {
+                validate: (educationInput) => {
+                  if (educationInput) {
                     return true;
                   } else {
                     console.log("Error! No edutcation has been entered");
@@ -219,7 +219,7 @@ class Prompt {
                 devData.name,
                 devData.id,
                 devData.email,
-                devData.school
+                devData.education
               );
               this.devTeam.push(newIntern);
               this.questions();

@@ -124,12 +124,8 @@ module.exports = (devArray) => {
       <div class="title">
         <h1>The Dev Team</h1>
       </div>
-<body>
-    <header>
-        <h1>My Team</h1>
-    </header>
-    <main class="container my-5">
-        <div class="row">
+    <main>
+        <div>
             ${renderHTML(devArray)}
         </div>
     </main>
